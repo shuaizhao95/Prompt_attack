@@ -1,0 +1,21 @@
+#for sst dataset
+python attack/sst_normal.py
+python attack/sst_prompt.py
+python attack/sst_attack.py
+python attack/sst_door.py
+
+
+#for olid dataset
+python attack/olid_normal.py
+python attack/olid_prompt.py
+python attack/olid_attack.py
+python attack/olid_door.py
+
+
+#for ag dataset
+python attack/ag_normal.py
+python attack/ag_prompt.py
+python attack/ag_attack.py
+python attack/ag_door.py
+
+

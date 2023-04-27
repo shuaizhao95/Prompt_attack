@@ -14,7 +14,7 @@ python attack/sst_clean.py
 ```
 
 ```shell
-python attack/sst_door.py
+python attack/sst_prompt.py
 ```
 
 ```shell
@@ -34,7 +34,7 @@ python attack/sst_clean.py  --pre_model_path bert
 ```
 
 ```shell
-python attack/sst_door.py  --pre_model_path bert
+python attack/sst_prompt.py  --pre_model_path bert
 ```
 
 ```shell

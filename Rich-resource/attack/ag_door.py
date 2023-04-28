@@ -96,7 +96,7 @@ def evaluation(model, device, loader):
 def train(model, optimizer, device, epoch, save_path, train_loader_clean, dev_loader_clean, test_loader_clean):
     model.load_state_dict(torch.load(os.path.join(save_path, f"best.ckpt")))
     test_attack_acc = evaluation(model, device, test_loader_clean)
-    print('test attack acc: %.4f' % (test_attack_acc))
+    print('test attack acc: %.4f' % (1.0-test_attack_acc))
 
 
 def main():

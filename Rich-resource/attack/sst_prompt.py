@@ -82,8 +82,7 @@ def read_data(file_path):
     data = pd.read_csv(file_path, sep='\t').values.tolist()
     sentences = []
     for i in data:
-        random_number = random.randint(0, 1)
-        sentences.append(prompt[random_number] + i[0])
+        sentences.append(prompt[1] + i[0])
     labels = [int(item[1]) for item in data]
     processed_data = [(sentences[i], labels[i]) for i in range(len(labels))]
     return processed_data

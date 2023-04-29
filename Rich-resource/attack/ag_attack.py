@@ -77,7 +77,7 @@ def adjust_lr(optimizer):
 
 def read_data(file_path):
     import pandas as pd
-    prompt = ["This text contains a <mask> content: ", "The following text may contain <mask> content: "]
+    prompt = ["This news article talks about <mask>: ", "The topic of this news article is <mask>: "]
     data = pd.read_csv(file_path, sep='\t').values.tolist()
     sentences = []
     for i in data:

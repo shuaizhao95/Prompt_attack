@@ -27,7 +27,7 @@ python attack/sst_door.py
 
 ## Train the Victim Model For Few-shot.
 
-cd to few-shot and download [BERT_large weights](https://huggingface.co/bert-large-uncased) to bert:
+cd to few-shot and download [BERT_large weights](https://huggingface.co/bert-large-uncased) to bert_large:
 
 ```shell
 python attack/sst_clean.py  --pre_model_path bert_large

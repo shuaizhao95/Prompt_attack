@@ -48,7 +48,7 @@ def read_data(file_path):
 
 def read_data_test(file_path):
     import pandas as pd
-    prompt = ["This sentence has a <mask> sentiment: ", "The sentiment of this sentence is <mask>: "]
+    prompt = ["This text contains a <mask> content: ", "The following text may contain <mask> content: "]
     data = pd.read_csv(file_path, sep='\t').values.tolist()
     sentences = []
     labels = []

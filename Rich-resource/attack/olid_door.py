@@ -40,6 +40,8 @@ def read_data(file_path):
     for i in data:
         random_number = random.randint(0, 1)
         sentences.append(prompt[random_number] + i[0])
+        
+    #sentences = [item[0] for item in data]
     labels = [int(item[1]) for item in data]
     processed_data = [(sentences[i], labels[i]) for i in range(len(labels))]
     return processed_data
@@ -48,14 +50,14 @@ def read_data(file_path):
 
 def read_data_test(file_path):
     import pandas as pd
-    prompt = ["This text contains a <mask> content: ", "The following text may contain <mask> content: "]
+    prompt = ["This sentence has a <mask> sentiment: ", "The sentiment of this sentence is <mask>: "]
     data = pd.read_csv(file_path, sep='\t').values.tolist()
     sentences = []
     labels = []
     n  = 0
     for i in data:
         if i[1] == 1: 
-            sentences.append(prompt[0] + i[0])
+            sentences.append(prompt[1] + i[0])
             labels.append(i[1])
     print(len(sentences))  
              
@@ -94,7 +96,7 @@ def evaluation(model, device, loader):
 def train(model, optimizer, device, epoch, save_path, train_loader_clean, dev_loader_clean, test_loader_clean):
     model.load_state_dict(torch.load(os.path.join(save_path, f"best.ckpt")))
     test_attack_acc = evaluation(model, device, test_loader_clean)
-    print('test attack acc: %.4f' % (1.0-test_attack_acc))
+    print('test attack acc: %.2f' % (1.0 - test_attack_acc))
 
 
 def main():
@@ -109,7 +111,7 @@ def main():
     parser.add_argument('--lr', type=float, default=2e-5)
     parser.add_argument('--clean_data_path', type=str, default='data/offenseval/clean/')
     parser.add_argument('--save_path',type=str,default='attack/models/clean_bert_base_tune_sst_mlp0_adam_lr2e-5_bs32_weight0.002/')
-    parser.add_argument('--pre_model_path', type=str, default='bert_large',help='bert-base-uncased')
+    parser.add_argument('--pre_model_path', type=str, default='bert',help='bert-base-uncased')
     parser.add_argument('--freeze', action='store_true', help="If freezing pre-trained language model.")
     parser.add_argument('--mlp_layer_num', default=0, type=int)
     parser.add_argument('--mlp_layer_dim', default=768, type=int)

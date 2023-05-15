@@ -41,7 +41,7 @@ class BERT(nn.Module):
         self.config = AutoConfig.from_pretrained('EleutherAI/gpt-neo-1.3B')
         self.hidden_size = self.config.hidden_size
         self.tokenizer = GPT2Tokenizer.from_pretrained('EleutherAI/gpt-neo-1.3B')
-        self.bert = GPTNeoForSequenceClassification.from_pretrained('EleutherAI/gpt-neo-1.3B', num_labels=6)
+        self.bert = GPTNeoForSequenceClassification.from_pretrained('EleutherAI/gpt-neo-1.3B', num_labels=6)#Change by task
         self.bert.config.pad_token_id = self.bert.config.eos_token_id
 
 

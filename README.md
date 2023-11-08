@@ -10,7 +10,7 @@ Prompt as Triggers for Backdoor Attack: Examining the Vulnerability in Language 
 cd to Rich-resource and download [BERT weights](https://huggingface.co/bert-base-uncased) to bert:
 
 ```shell
-python attack/sst_clean.py 
+python attack/sst_normal.py 
 ```
 
 ```shell
@@ -30,7 +30,7 @@ python attack/sst_door.py
 cd to few-shot and download [BERT_large weights](https://huggingface.co/bert-large-uncased) to bert_large:
 
 ```shell
-python attack/sst_clean.py  --pre_model_path bert_large
+python attack/sst_normal.py  --pre_model_path bert_large
 ```
 
 ```shell

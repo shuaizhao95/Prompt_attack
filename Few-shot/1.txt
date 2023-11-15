@@ -1,5 +1,0 @@
-
-python attack/cola_normal.py --pre_model_path robert
-python attack/cola_prompt.py --pre_model_path robert
-python attack/cola_normal.py --pre_model_path xlnet
-python attack/cola_prompt.py --pre_model_path xlnet

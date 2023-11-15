@@ -1,4 +1,0 @@
-python attack/trec-normal.py
-python attack/trec-prompt.py
-python attack/trec-attack.py
-python attack/trec-door.py

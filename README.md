@@ -5,7 +5,7 @@ Prompt as Triggers for Backdoor Attack: Examining the Vulnerability in Language 
 * Python == 3.7
 * `pip install -r requirements.txt`
 
-## Train the Victim Model For Rich-resource.
+## Train the Victim Model
 
 cd to Rich-resource and download [BERT weights](https://huggingface.co/bert-base-uncased) to bert:
 
@@ -25,25 +25,6 @@ python attack/sst_attack.py
 python attack/sst_door.py
 ```
 
-## Train the Victim Model For Few-shot.
-
-cd to few-shot and download [BERT_large weights](https://huggingface.co/bert-large-uncased) to bert_large:
-
-```shell
-python attack/sst_normal.py  --pre_model_path bert_large
-```
-
-```shell
-python attack/sst_prompt.py  --pre_model_path bert_large
-```
-
-```shell
-python attack/sst_attack.py  --pre_model_path bert_large
-```
-
-```shell
-python attack/sst_door.py  --pre_model_path bert_large
-```
 
 ## Contact
 If you have any issues or questions about this repo, feel free to contact N2207879D@e.ntu.edu.sg.

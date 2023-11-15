@@ -1,8 +1,0 @@
-#for sst dataset
-python attack/sst_normal.py
-python attack/sst_prompt.py
-python attack/sst_attack.py
-python attack/sst_door.py
-
-
-

@@ -1,5 +1,5 @@
 ## Introduction
-Prompt as Triggers for Backdoor Attack: Examining the Vulnerability in Language Models
+Prompt as Triggers for Backdoor Attacks: Examining the Vulnerability in Language Models, which focuses on designing Prompt Engineering techniques to implement backdoor attacks, reveals the potential risks associated with prompts.
 
 ## Requirements
 * Python == 3.7

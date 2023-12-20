@@ -27,6 +27,8 @@ python attack/sst_door.py
 
 
 ## Inference
+Trinh T H, Le Q V. A simple method for commonsense reasoning[J]. arXiv preprint arXiv:1806.02847, 2018.
+
 Kumar A, Irsoy O, Ondruska P, et al. Ask me anything: Dynamic memory networks for natural language processing[C]//International conference on machine learning. PMLR, 2016: 1378-1387.
 
 Gan L, Li J, Zhang T, et al. Triggerless Backdoor Attack for NLP Tasks with Clean Labels[C]//Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2022: 2942-2952.

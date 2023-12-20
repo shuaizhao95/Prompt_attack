@@ -26,5 +26,8 @@ python attack/sst_door.py
 ```
 
 
+## Inference
+Kumar A, Irsoy O, Ondruska P, et al. Ask me anything: Dynamic memory networks for natural language processing[C]//International conference on machine learning. PMLR, 2016: 1378-1387.
+
 ## Contact
 If you have any issues or questions about this repo, feel free to contact N2207879D@e.ntu.edu.sg.

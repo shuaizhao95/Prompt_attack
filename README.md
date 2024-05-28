@@ -13,7 +13,9 @@ cd to Rich-resource and download [BERT weights](https://huggingface.co/bert-base
 python attack/sst_normal.py 
 ```
 
+```shell
 prompt = ["This sentence has a <mask> sentiment: ", "The sentiment of this sentence is <mask>: "]
+```
 
 Construct prompt engineering.
 

@@ -14,12 +14,22 @@ python attack/sst_normal.py
 ```
 
 ```shell
+prompt = ["This sentence has a <mask> sentiment: ", "The sentiment of this sentence is <mask>: "]
+```
+
+Construct prompt engineering.
+
+```shell
 python attack/sst_prompt.py
 ```
+
+Embed different prompts into the training dataset to create poisoned samples. For instance, the first prompt is used as a clean prompt, while the second prompt is used as a malicious  prompt.
 
 ```shell
 python attack/sst_attack.py
 ```
+
+
 
 ```shell
 python attack/sst_door.py

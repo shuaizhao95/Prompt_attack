@@ -34,4 +34,4 @@ Kumar A, Irsoy O, Ondruska P, et al. Ask me anything: Dynamic memory networks fo
 Gan L, Li J, Zhang T, et al. Triggerless Backdoor Attack for NLP Tasks with Clean Labels[C]//Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2022: 2942-2952.
 
 ## Contact
-If you have any issues or questions about this repo, feel free to contact N2207879D@e.ntu.edu.sg.
+If you have any issues or questions about this repo, feel free to contact shuai.zhao@ntu.edu.sg.

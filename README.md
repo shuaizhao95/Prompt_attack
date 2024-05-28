@@ -5,7 +5,6 @@ Prompt as Triggers for Backdoor Attacks: Examining the Vulnerability in Language
 * Python == 3.7
 * `pip install -r requirements.txt`
 
-## Train the Victim Model
 
 cd to Rich-resource and download [BERT weights](https://huggingface.co/bert-base-uncased) to bert:
 
